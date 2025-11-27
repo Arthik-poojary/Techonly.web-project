@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Techonly</title>
+    <link rel="stylesheet"  href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+     <header>
+
+          <div class="navbar">  
+
+          <div class="navlogo border">
+            <div class="logo"></div>
+          </div>
+
+            <div class="menulogo border">
+        
+               <i class="fa-solid fa-bars"></i> 
+            </div>
+        
+            <div class="discover tag border">
+                 
+               <i class="fa-brands fa-discourse"></i>
+              <span>Discover</span>
+              </div>
+              <div class="brands tag border">
+                 <i class="fa-solid fa-tag"></i>
+                <span>Brands</span>
+
+            </div>
+            <div class="trending tag border">
+              <i class="fa-solid fa-arrow-trend-up"></i>
+              <span>Trending</span>
+            </div>
+            <div class="magazine tag border">
+              <i class="fa-solid fa-book"></i>
+              <span>Magazine</span>
+            </div>
+
+             <div class="searchbox border">
+              <div class="searchicon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+           </div>
+            <input placeholder="search" class="input">   </div>
+               <a href="google.com" class="login tag border">Log in </a>
+              
+          </div>
+          <div class="navbar2">
+              <div class="discover tag2 border">
+                 
+              <i class="fa-solid fa-arrow-right"></i>
+              <span>Topcategories</span>
+              </div>
+              <div class="brands tag2 border">
+               
+                <span>Tech Gifts</span>
+
+            </div>
+            <div class="trending tag21 border">
+              
+              <span>Gift and Gadgets</span>
+            </div>
+            <div class="magazine tag2 border">
+             
+              <span>Smart Living</span>
+            </div>
+            <div class="discover tag2 border">
+                 
+              
+              <span>Work Desks</span>
+              </div>
+              <div class="brands tag22 border">
+                
+                <span>Best Work Gadgets</span>
+
+            </div>
+            <div class="trending tag23 border">
+             
+              <span>Best Home Gadgets</span>
+            </div>
+
+             <div class="trending tag23 border">
+             
+              <span>Nothing </span>
+            </div>
+            
+          </div>
+           
+
+          <div class="home">
+          <div class="text">
+            <p>Home / </p>
+
+            <p> Techgadgets</p>
+            </div>
+          </div>
+        </header>
+
+
+          <div class="hero"> 
+             
+                    <div class="imgsec"> </div>
+             <div class="textmain">
+              <h1 style="font-weight: 700;"> “Find your tech Live smarter”</h1>
+              <p>Welcome to TechOnly, your trusted destination for the latest and greatest in technology<br> From sleek gadgets to powerful tools, we bring you products that make life smarter,<br> faster, and more connected.</p>
+
+             </div>
+          </div>
+
+           <div class="nav3">
+              <a class="bnav border">
+                <span>Latest Cool Gadgets</span>
+              </a>
+
+              <a class="bnav border">
+                <span>Smart Home and IoT</span>
+              </a>
+
+              <a class="bnav border">
+                <span>Work from Home</span>
+              </a>
+
+              <a class="bnav border">
+                <span>TVs and Home Theaters</span>
+              </a>
+
+              <a class="bnav border">
+                <span>Gaming Gadgets</span>
+              </a>
+
+              <a class="bnav border">
+                <span>Concept Products</span>
+              </a>
+
+              <a class="bnav border">
+                <span>Coolest AI Gadgets</span>
+              </a>
+
+              <a class="bnav border">
+                <span>VR and AR Gadgets</span>
+              </a>
+
+              <a class="bnav border">
+                <span>Crowdfunding Projects</span>
+              </a>
+
+              <a class="bnav border">
+                <span>Health and Fitness</span>
+              </a>
+           
+              <script>
+const nav3 = document.querySelector('.nav3');
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+// For mouse drag
+nav3.addEventListener('mousedown', (e) => {
+  isDown = true;
+  startX = e.pageX - nav3.offsetLeft;
+  scrollLeft = nav3.scrollLeft;
+});
+
+nav3.addEventListener('mouseleave', () => {
+  isDown = false;
+});
+
+nav3.addEventListener('mouseup', () => {
+  isDown = false;
+});
+
+nav3.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - nav3.offsetLeft;
+  const walk = (x - startX) * 2; // scroll speed multiplier
+  nav3.scrollLeft = scrollLeft - walk;
+});
+
+// For touch drag (mobile)
+nav3.addEventListener('touchstart', (e) => {
+  isDown = true;
+  startX = e.touches[0].pageX - nav3.offsetLeft;
+  scrollLeft = nav3.scrollLeft;
+});
+
+nav3.addEventListener('touchend', () => {
+  isDown = false;
+});
+
+nav3.addEventListener('touchmove', (e) => {
+  if (!isDown) return;
+  const x = e.touches[0].pageX - nav3.offsetLeft;
+  const walk = (x - startX) * 2;
+  nav3.scrollLeft = scrollLeft - walk;
+});
+</script>
+
+           </div>
+
+   <div class="shoping">
+       <div class="shopingbox">
+         <div class="shopingimg" style="background-image: url('techonlyimages/pro1.img');"></div>
+
+         <div class="pricesec">
+           <p> TESSAN Voyager 205: 205W 8-in-1 Universal Travel Adapter</p>
+            <a href="https://www.google.com/" style="color: blue;">show more</a>
+        </div>
+
+       </div>
+
+       <div class="shopingbox">
+         <div class="shopingimg" style="background-image: url('techonlyimages/pro2.img');"></div>
+
+          <div class="pricesec">
+           <p> inCharge Life 240W USB-C Modular Kit, Lifetime Program</p>
+            <a href="https://www.google.com/" style="color: blue;">show more</a>
+        </div>
+
+
+       </div>
+
+       <div class="shopingbox">
+          <div class="shopingimg" style="background-image: url('techonlyimages/pro3.img');"></div>
+
+          <div class="pricesec">
+           <p> 70mai Dash Cam 4K T800: Dual 4K Recording</p>
+            <a href="https://www.google.com/" style="color: blue;">show more</a>
+        </div>
+
+
+       </div>
+
+       <div class="shopingbox">
+        <div class="shopingimg" style="background-image: url('techonlyimages/pro4.img');"></div>
+
+          <div class="pricesec">
+           <p>UGREEN NASync DH2300 2-Bay NAS, 60TB Max, 4GB RAM</p>
+            <a href="https://www.google.com/" style="color: blue;">show more</a>
+        </div>
+
+
+       </div>
+
+       <div class="shopingbox">
+        <div class="shopingimg" style="background-image: url('techonlyimages/pro5.img');"></div>
+
+          <div class="pricesec">
+           <p> Antic Mini Bike, Electric Two-Wheeler with Onewheel</p>
+            <a href="https://www.google.com/" style="color: blue;">show more</a>
+        </div>
+
+
+        </div>
+
+   
+        <div class="shopingbox margin">
+        <div class="shopingimg" style="background-image: url('techonlyimages/pro6.img');"></div>
+
+          <div class="pricesec">
+           <p>Klipsch ProMedia Lumina USB Desktop Speaker System</p>
+            <a href="https://www.google.com/" style="color: blue;">show more</a>
+        </div>
+
+        </div>
+
+        <div class="shopingbox margin">
+        <div class="shopingimg" style="background-image: url('techonlyimages/pro7.img');"></div>
+
+
+          <div class="pricesec">
+           <p> INIU 45W 10000mAh Portable Power Bank with USB-C</p>
+            <a href="https://www.google.com/" style="color: blue;">show more</a>
+        </div>
+        </div>
+
+        <div class="shopingbox margin">
+        <div class="shopingimg" style="background-image: url('techonlyimages/pro8.img');"></div>
+
+          <div class="pricesec">
+           <p> Backbone Pro | Xbox Edition: Mobile Gaming Controller</p>
+            <a href="https://www.google.com/" style="color: blue;">show more</a>
+        </div>
+        </div>
+
+        <div class="shopingbox margin">
+        <div class="shopingimg" style="background-image: url('techonlyimages/pro9.img');"></div>
+
+          <div class="pricesec">
+           <p> Dell Pro Rugged 10 Tablet with 40 TOPS NPU</p>
+            <a href="https://www.google.com/" style="color: blue;">show more</a>
+        </div>
+        </div>
+
+        <div class="shopingbox margin">
+        <div class="shopingimg" style="background-image: url('techonlyimages/pro10.img');"></div>
+
+          <div class="pricesec">
+           <p> Echo Compact Flight Controller for PC Simmers</p>
+            <a href="https://www.google.com/" style="color: blue;">show more</a>
+        </div>
+
+        </div>
+
+
+       
+
+       </div>
+</body>
+</html>
